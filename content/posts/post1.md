@@ -2,7 +2,7 @@
 id: 1
 title: 1
 description: Lorem
-image: /images/Trees/autumn-maple-trees.jpg
+image: /images/trees/autumn-maple-trees.jpg
 ---
 ```
 <template onload='this.form1.text1.focus()'>

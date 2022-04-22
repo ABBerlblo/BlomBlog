@@ -2,7 +2,7 @@
 id: 2
 title: 2
 description: Lorem
-image: \images\Trees\Biggest-Tree-In-the-World.png
+image: \images\trees\biggest-tree-in-the-world.png
 ---
 ´´´´
 const express = require('express')
