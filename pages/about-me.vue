@@ -49,11 +49,11 @@
           the woods one of the few places where you can be free and undisturbed,
           where you may be yourself.
         </div>
-        <div><img src="../static\images\Compass.svg" alt="" /></div>
+        <div><img src="../static\images\compass.svg" alt="" /></div>
       </div>
 
       <div class="w-full p-8 flex flex-wrap justify-evenly items-center">
-        <div><img src="../static\images\Gaiters.svg" alt="" /></div>
+        <div><img src="../static\images\gaiters.svg" alt="" /></div>
         <div class="text-lg font-light w-96 h-96">
           <p class="text-2xl text-red-500 font-bold">Clothes</p>
           It is important to always be properly dressed for the occasion. Always
@@ -75,12 +75,12 @@
           hunger thirst is also an unnessesary guest in everyday life, remember
           to keep hydrated.
         </div>
-        <div><img src="../static\images\BottleBasket.svg" alt="" /></div>
+        <div><img src="../static\images\bottlebasket.svg" alt="" /></div>
       </div>
     </div>
 
     <div class="w-full p-8 flex flex-wrap justify-evenly items-center">
-      <div><img src="../static\images\Bag.svg" alt="" /></div>
+      <div><img src="../static\images\bag.svg" alt="" /></div>
       <div class="text-lg font-light w-96 h-96">
         <p class="text-2xl text-red-500 font-bold">Gear and Tools</p>
         Not always nessesary but it might sometimes be releaving to carry a
