@@ -8,14 +8,20 @@
         box-border
         bg-white
         border
-        rounded-md
+        rounded-xl
         border-solid border-black
       "
     >
       <img
         :src="item.image"
         alt="post image"
-        class="h-fit w-full object-cover border-b-2 border-solid border-black"
+        class="
+          h-fit
+          w-full
+          rounded-t-xl
+          object-cover
+          border-b-2 border-solid border-black
+        "
       />
       <h3
         class="

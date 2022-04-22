@@ -1,5 +1,5 @@
 <template>
-  <center class="WhiteCity bg-transparent">
+  <center class="White-cherry Inversion">
     <div class="w-3/5 font-medium">
       <p class="mx-8 py-16 text-red-500 text-4xl font-bold text-left">Blog</p>
       <div class="">
@@ -47,13 +47,17 @@
 </template>
 
 <style>
-.WhiteCity {
+.Inversion {
+  backdrop-filter: invert(100%);
+  filter: saturate(2);
+  opacity: 0.8;
+}
+.White-cherry {
   background-size: 100%;
-  background-image: url(../static/images/white-cherry.jpg);
+  background-image: url(../static/images/white-cherry.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: invert(100%);
 }
 </style>
 

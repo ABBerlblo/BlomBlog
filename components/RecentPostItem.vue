@@ -5,16 +5,22 @@
         shadow-2xl
         box-border
         bg-white
-        border
-        rounded-md
-        border-solid border-gray-300
+        border-2
+        rounded-3xl
+        border-solid border-grey-500
         z-2
       "
     >
       <img
         :src="item.image"
         alt="post image"
-        class="h-64 w-80 object-cover border-b border-solid border-gray-300"
+        class="
+          h-64
+          w-80
+          object-cover
+          rounded-t-3xl
+          border-b border-solid border-black
+        "
       />
       <h3 class="p-2 text-xl text-bold">
         {{ item.title }}

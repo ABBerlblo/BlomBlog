@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-white w-full h-fit px-20 flex flex-col">
+  <div class="Black-cherry w-full h-fit px-20 flex flex-col">
     <center>
       <div class="w-3/5 py-12 flex flex-wrap justify-between">
         <div class="pt-4">
           <nuxt-link
             to="/blog"
-            class="text-xl font-semibold text-black hover:text-red-600"
+            class="text-xl font-semibold text-white hover:text-red-600"
             >All Posts</nuxt-link
           >
         </div>
@@ -37,33 +37,26 @@
           box-border
           bg-white
           border
-          rounded-md
-          border-solid border-gray-300
+          rounded-2xl
+          border-solid border-gray-500
           flex flex-col
           shadow-2xl
         "
       >
         <h1 class="text-5xl my-8">{{ post.title }}</h1>
         <p class="mb-8 font-bold text-lg">{{ post.description }}</p>
-        <img :src="post.image" class="py-4" />
+        <img :src="post.image" class="my-4 pb-4 rounded-t-3xl" />
         <nuxt-content :document="post" class="text-lg text-left"></nuxt-content>
-        <Share class="py-8" />
+        <Share class="my-8 mb-4 py-4 border-t border-b border-grey-500" />
       </div>
 
       <div class="w-3/5 mb-12">
         <div
-          class="
-            w-full
-            pt-4
-            pb-12
-            text-lg text-semibold
-            flex flex-wrap
-            justify-between
-          "
+          class="w-full pt-4 pb-12 text-white flex flex-wrap justify-between"
         >
-          <div>Recent Posts:</div>
+          <div class="text-xl text-medium">Recent Posts:</div>
           <div>
-            <nuxt-link to="/blog" class="text-black hover:text-red-600"
+            <nuxt-link to="/blog" class="text-xl text-medium hover:text-red-600"
               >All Posts --></nuxt-link
             >
           </div>
@@ -87,12 +80,12 @@
           box-border
           bg-white
           border
-          rounded-md
-          border-solid border-gray-300
+          rounded-2xl
+          border-solid border-grey-500
           shadow-2xl
         "
       >
-        <div class="pl-24 text-xl text-left">Comment:</div>
+        <div class="pl-24 text-xl text-medium text-left">Comment:</div>
 
         <div class="w-full flex flex-wrap justify-center">
           <div>
@@ -124,8 +117,17 @@
   </div>
 </template>
 
-<script>
+<style>
+.Black-cherry {
+  background-size: 100%;
+  background-image: url(../../static/images/black-cherry.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+</style>
 
+<script>
 export default {
   async asyncData ({ $content, params }) {
     let post = await $content('posts/post' + params.id).fetch()

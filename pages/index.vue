@@ -1,9 +1,6 @@
 <template>
-  <div>
-    <img
-      class="responsive h-screen z-1 overflow-hidden"
-      src="../static/images/BloggForest1.gif"
-    />
+  <div class="">
+    <div class="darallax h-screen z-1 overflow-hidden"></div>
 
     <div
       class="
@@ -50,9 +47,12 @@
   filter: saturate(2);
   opacity: 0.8;
 }
-
-.responsive {
-  width: 100%;
+.darallax {
+  background-image: url(../static/images/forestblog.gif);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   object-fit: cover;
 }
 </style>

@@ -1,14 +1,5 @@
 <template>
-  <div
-    class="
-      border-y border-black
-      flex
-      jystify-evenly
-      items-center
-      py-1
-      bg-grey-800
-    "
-  >
+  <div class="flex jystify-evenly items-center py-1 bg-grey-800">
     <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
       <img src="../static/images/facebook.svg" alt="" class="h-7 mr-2" />
     </a>
