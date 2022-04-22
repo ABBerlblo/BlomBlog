@@ -53,6 +53,7 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  backdrop-filter: invert(100%);
 }
 </style>
 
