@@ -47,7 +47,7 @@
         <p class="mb-8 font-bold text-lg">{{ post.description }}</p>
         <img :src="post.image" class="py-4" />
         <nuxt-content :document="post" class="text-lg text-left"></nuxt-content>
-        <Share class="py-8" />
+        <Share class="py-8 border-y border-black" />
       </div>
 
       <div class="w-3/5 mb-12">
