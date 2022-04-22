@@ -8,12 +8,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-      selected: null,
-
-    }
-  },
 
   head () {
     return {
