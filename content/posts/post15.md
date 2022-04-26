@@ -1,7 +1,7 @@
 ---
 id: 15
-title: 15
-description: lorem
+title: Snow 
+description: It is white
 image: \images\trees\snowy-white-forest.jpg
 ---
 

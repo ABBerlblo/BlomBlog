@@ -1,7 +1,7 @@
 ---
 id: 2
-title: 2
-description: Lorem
+title: Refined leftover code
+description: Indeed
 image: \images\trees\biggest-tree-in-the-world.png
 ---
 ´´´´

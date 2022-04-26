@@ -1,16 +1,56 @@
 ---
 id: 3
-title: 3
-description: Lorem
+title: Failed mail function
+description: Spoiler allert falied
 image: \images\trees\cute-tree.jpg
 ---
+server.js
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    const express = require('express')
+    const app = express()
 
-# Lorem
----
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    const nodemailer = require("nodemailer")
 
+    const PORT = process.env.PORT || 5000
 
-## Lore
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    //middleware
+    app.use(express.static('pages'))
+    app.use(express.json())
+
+    app.get('/', (req, res) => {
+        res.sendFile(__dirname + '/pages/contact.vue')
+    })
+
+    app.post('/', (req, res) => {
+        console.log(req.body)
+
+        const transporter = nodemailer.createTransport({
+            service: gmail,
+            auth: {
+                user: "blombergblog@gmail.com",
+                pass: "Password/01"
+            }
+        })
+
+        const mailOptions = {
+            from: req.body.email,
+            to: 'blombergblog@gmail.com',
+            subject: 'Message from ${ req.body.email }: ${ req.body.subject }',
+            text: req.body.message
+        }
+
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.log(error)
+                res.send('error')
+            }
+            else {
+                console.log('Email sent:' + info.response)
+                res.send('success')
+            }
+        })
+    })
+
+    app.listen(PORT), () => {
+        console.log('Server running on port ' + { PORT })
+    }

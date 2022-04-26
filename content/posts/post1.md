@@ -1,7 +1,7 @@
 ---
 id: 1
-title: 1
-description: Lorem
+title: Leftover code
+description: read the title
 image: /images/trees/autumn-maple-trees.jpg
 ---
 ```

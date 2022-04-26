@@ -1,7 +1,7 @@
 ---
 id: 7
-title: 7
-description: lorem
+title: Umae Wa Mou,
+description: SHINDEIRU!!!
 image: \images\trees\japanese-cherryblossom.jpg
 ---
 

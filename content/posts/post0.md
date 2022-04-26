@@ -1,7 +1,7 @@
 ---
 id: 0
-title: Read Me
-description: Inspiration
+title: ReadMe
+description: My Inspiration
 image: /images/god-pics/dancing-gentleman.svg
 
 ---

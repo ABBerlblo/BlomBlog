@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="`/posts/${item.id}`">
-    <legend class="text-2xl font-semibold">Latest Post:</legend>
+    <legend class="text-2xl font-semibold">Latest Journey:</legend>
     <div
       class="
         m-8

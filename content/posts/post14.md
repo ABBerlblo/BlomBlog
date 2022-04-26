@@ -1,7 +1,7 @@
 ---
 id: 14
-title: 14
-description: lorem
+title: Snow
+description: its cold
 image: \images\trees\snow-trees-.jpg
 ---
 

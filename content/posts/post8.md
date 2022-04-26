@@ -1,7 +1,7 @@
 ---
 id: 8
-title: 8
-description: lorem
+title: Hidden in the mist
+description: Just like my past
 image: \images\trees\many-trees-are-there-in-the-world.jpg
 ---
 

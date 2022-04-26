@@ -1,7 +1,7 @@
 ---
 id: 12
-title: 12
-description: lorem
+title: Litterally the color yellow
+description: How do I combat this?
 image: \images\trees\red-autumn-gold-trees.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: 6
-title: 6
-description: lorem
+title: Rocky terrain
+description: Dessert power
 image: \images\trees\iron-mountain-trees.jpg
 ---
 

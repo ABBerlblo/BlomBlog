@@ -1,7 +1,7 @@
 ---
 id: 5
-title: 5
-description: lorem
+title: Golden wind
+description: Is that a jojo reference!
 image: \images\trees\field-tree.webp
 ---
 

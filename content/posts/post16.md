@@ -1,7 +1,7 @@
 ---
 id: 16
-title: 16
-description: lorem
+title: Your last resort
+description: As in a luxourous trip!
 image: \images\trees\sun-rise-trees.jpg
 ---
 

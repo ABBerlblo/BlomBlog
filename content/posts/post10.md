@@ -1,7 +1,7 @@
 ---
 id: 10
-title: 10
-description: lorem
+title: How many are there?
+description: Hidden in the forest
 image: \images\trees\mountains-fog-clouds-trees.jpg
 ---
 

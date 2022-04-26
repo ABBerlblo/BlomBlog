@@ -1,7 +1,7 @@
 ---
 id: 17
-title: 17
-description: lorem
+title: The One
+description: Who shall rule over all
 image: \images\trees\the-one-tree.jpg
 ---
 

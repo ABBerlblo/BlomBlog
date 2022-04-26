@@ -1,14 +1,10 @@
 <template>
   <center class="White-cherry Inversion">
     <div class="w-3/5 font-medium">
-      <p class="mx-8 py-16 text-red-500 text-4xl font-bold text-left">Blog</p>
-      <div class="">
-        <MainPost
-          v-for="item in TopPost"
-          :key="item.id"
-          :item="item"
-        ></MainPost>
-      </div>
+      <p class="mx-8 py-16 text-red-500 text-4xl font-bold text-left">
+        Adventure! Blog
+      </p>
+      <MainPost v-for="item in TopPost" :key="item.id" :item="item"></MainPost>
 
       <div class="w-full py-12 flex flex-wrap justify-between">
         <div class="ml-8 text-xl font-semibold">All Posts:</div>
@@ -35,11 +31,14 @@
       <div class="flex flex-wrap justify-between h-fit w-full">
         <div
           @click="goTopost(post.id)"
-          class="w-fit m-8"
+          class="w-72 m-8"
           v-for="post in posts"
           :key="post.id"
         >
-          <PostListItem :item="post"></PostListItem>
+          <PostListItem
+            :item="post"
+            class="hover:border-2 hover:border-red-500 cursor-pointer"
+          ></PostListItem>
         </div>
       </div>
     </div>

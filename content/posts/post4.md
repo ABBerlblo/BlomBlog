@@ -1,7 +1,7 @@
 ---
 id: 4
-title: 4
-description: Lorem
+title: Hot climate
+description: Somewhere in the world
 image: \images\trees\dragon_blood_tree.jpg
 ---
 
