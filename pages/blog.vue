@@ -53,7 +53,8 @@
 }
 .White-cherry {
   background-size: 100%;
-  background-image: url(../static/images/white-cherry.png);
+  /* background-image: url(../static/images/white-cherry.png); */
+  background: white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

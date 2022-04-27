@@ -120,7 +120,8 @@
 <style>
 .Black-cherry {
   background-size: 100%;
-  background-image: url(../../static/images/black-cherry.png);
+  /* background-image: url(../../static/images/black-cherry.png); */
+  background: white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
